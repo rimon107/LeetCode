@@ -1,6 +1,6 @@
 from palindrom import Solution
 
-class TestAddTwoNumbers:
+class TestPalindrom:
     def test_palindrom_1(self):
         x, sol = 121, True
         solution = Solution()
