@@ -1,6 +1,6 @@
 from reverse_int import Solution
 
-class TestLSWRC:
+class TestReverseInt:
     def test_reverse_int_1(self):
         x = 123
         output = 321
