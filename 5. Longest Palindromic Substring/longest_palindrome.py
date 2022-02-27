@@ -27,7 +27,7 @@ class Solution:
                     palindrome = string
         return palindrome
     
-    def longestPalindrome(self, s: str) -> str:
+    def manacher_longest_palindrome(self, s: str) -> str:
         s_prime = "|"
         for char in s:
             s_prime = s_prime + char+'|' 
@@ -96,6 +96,10 @@ class Solution:
             i += 1
 
         return palindrome 
+
+    def longestPalindrome(self, s: str) -> str:
+        res = self.manacher_longest_palindrome(s)
+        return res
             
 
 
